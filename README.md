@@ -1,4 +1,4 @@
-### CatEvade Omega
+## CatEvade Omega
 ## A CLI for solving for x
 
 this program allows to solve for x in your terminal.
