@@ -4,7 +4,7 @@
 this program allows to solve for x in your terminal.
 currently, the only supported feature of sympy is solving equations.
 
-## Requirenments
+## Requirements
 
 * Python 3
 * preferably a UNIX based OS
