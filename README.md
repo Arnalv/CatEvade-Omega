@@ -20,7 +20,7 @@ pip install pygments
 pip install prompt_toolkit 
 ```
 start the program with `python cli.py equate`
-you can then run equations ike this
+you can then run equations like this
 `|-> x + 5 = g`
 or solve for a particular variable with a `#` like this
 `|-> x - y = h / j #x`
