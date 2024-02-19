@@ -11,6 +11,8 @@ currently, the only supported feature of sympy is solving equations.
 
 ## How to use
 
+### Equations
+
 clone this repository, then cd in.
 run these commands to install the dependencies
 ```
@@ -29,3 +31,11 @@ or you can also run the program with the `-s` flag in order to solve for a parti
 python cli.py equate -s x
 |-> x + y = h
 ```
+### Graphs
+start the program with `python cli.py graph`
+you can then run plots like this
+`|-> y = x + 5`
+or show the graph
+`|-> y = show`
+or you can also run the program with the `-g False`(default) flag in order to show the graph in a seperate window, or you can set `-g` to True to show the graph in the terminal
+run the `-b`, `-l`, and `-t` flags to change the beginning point, length, and height/tallness respectively
