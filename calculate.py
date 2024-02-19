@@ -28,7 +28,6 @@ def equations(solve_for = None):
             solution = return_solved_equation(user_input, solve_for)
             load()
             print("|-< ", solution, "\n")
-            return solution
 
         except Exception as err:
             print("an error occured") 
