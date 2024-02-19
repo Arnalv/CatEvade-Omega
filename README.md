@@ -17,7 +17,8 @@ run these commands to install the dependencies
 pip install sympy
 pip install matplotlib
 pip install pygments
-pip install prompt_toolkit 
+pip install prompt_toolkit
+pip install plotext
 ```
 ### Equations
 
