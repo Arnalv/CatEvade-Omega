@@ -11,8 +11,6 @@ currently, the only supported feature of sympy is solving equations.
 
 ## How to use
 
-### Equations
-
 clone this repository, then cd in.
 run these commands to install the dependencies
 ```
@@ -21,6 +19,8 @@ pip install matplotlib
 pip install pygments
 pip install prompt_toolkit 
 ```
+### Equations
+
 start the program with `python cli.py equate`
 you can then run equations like this
 `|-> x + 5 = g`
