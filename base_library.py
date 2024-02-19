@@ -30,8 +30,8 @@ menu_style = Style.from_dict({
 
 completer = WordCompleter(["0", "1", "2", "3", "5", "6", "7", "8", "9", "a", 
 "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
-"s", 't', "u", "v", "w", "x", "y", "z", "+", "-", "*", "/", "^", "=", "#", "clear", "quit"]
-, ignore_case=True)
+"s", 't', "u", "v", "w", "x", "y", "z", "+", "-", "*", "/", "^", "%", "=", "#", "clear", "quit", "show"], 
+ignore_case=True)
 
 style = merge_styles([
     styles,
@@ -43,9 +43,9 @@ hist_file = open(".history", "w")
 hist_file.write("")
 hist_file.close()
 
-def get_input(command = "python cli.py equate"):
+def get_input(command = "python cli.py equate", concat_val = ""):
     session = PromptSession(completer=completer, lexer=PygmentsLexer(APLLexer), style=style, history=FileHistory('.history'))
-    user_input = session.prompt("|-> ")
+    user_input = session.prompt("|-> " + concat_val)
     if "quit" in user_input:
         quit()
     elif "clear" in user_input:
@@ -58,6 +58,13 @@ def sympifiable(Expr):
     returned_list = ""
     for i in Expr:
         if i in digits or i in operators or i in alphabet:
+            returned_list += str(i)
+    return str(returned_list)
+
+def graphable(Expr):
+    returned_list = ""
+    for i in Expr:
+        if i in digits or i in operators or i in ["x", "y"]:
             returned_list += str(i)
     return str(returned_list)
 
