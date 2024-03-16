@@ -22,7 +22,7 @@ pip install plotext
 ```
 ### Equations
 
-start the program with `python cli.py equate`
+start the program with `python CEO.py equate`
 you can then run equations like this
 `|-> x + 5 = g`
 or solve for a particular variable with a `#` like this
@@ -33,7 +33,7 @@ python cli.py equate -s x
 |-> x + y = h
 ```
 ### Graphs
-start the program with `python cli.py graph`
+start the program with `python CEO.py graph`
 you can then run plots like this
 `|-> y = x + 5`
 or show the graph
