@@ -7,9 +7,12 @@ currently, the only supported feature of sympy is solving equations.
 ## Requirements
 
 * Python 3
-* preferably a UNIX based OS
+* preferably a UNIX/Linux based OS
 
-## How to use
+## Installation
+
+If you use an x86_64 based OS (Preferably Linux), you can get the binary from the releases, and run that. if not,
+follow these instructions.
 
 clone this repository, then cd in.
 run these commands to install the dependencies
